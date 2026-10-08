@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClipForge</title>
+<meta name="description" content="ClipForge is a desktop app that finds the best moments in livestreams, turns them into captioned vertical clips, and posts them to the creator's own accounts.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top">
+  <a class="logo" href="index.html"><img src="icon.png" alt="" width="32" height="32">ClipForge</a>
+  <div class="links"><a href="#how">How it works</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a></div>
+</nav>
+
+<main>
+  <section class="hero">
+    <img class="hero-icon" src="icon.png" alt="ClipForge app icon" width="112" height="112">
+    <h1>Livestream highlights, clipped and posted for you.</h1>
+    <p class="lead">ClipForge is a Windows desktop app that watches livestreams, finds the moments people actually laughed at, and turns them into short vertical clips with captions, ready to post to your own TikTok, YouTube, Instagram and Facebook accounts.</p>
+  </section>
+
+  <section id="how" class="block">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Watch.</b> Add the channels you clip. ClipForge records them locally while they're live, on your own PC.</li>
+      <li><b>Find the moment.</b> It looks for proof a moment landed: chat laughing, viewers asking for a clip, the room getting loud. A local AI model reads the transcript to judge whether it's funny without needing context.</li>
+      <li><b>Make the clip.</b> It cuts a 30–60 second vertical video with a title card and word-by-word captions, and puts it in a review queue.</li>
+      <li><b>Post it.</b> Clips you approve are posted to your connected accounts on a schedule you choose, with the streamer credited in every caption.</li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card"><h3>Runs on your PC</h3><p>Recording, transcription and AI scoring all happen locally. No cloud servers, no subscription to an AI service.</p></div>
+      <div class="card"><h3>Review queue</h3><p>Approve, reject, re-title or trim any clip before it goes out. The app learns from what you reject.</p></div>
+      <div class="card"><h3>Captions and titles</h3><p>Automatic captions and a branded title card on every clip, with swear words softened in titles.</p></div>
+      <div class="card"><h3>Posting schedule</h3><p>Set posting times and spread clips across your pages so nothing gets posted back-to-back.</p></div>
+      <div class="card"><h3>Credit built in</h3><p>Every post names the streamer and where the clip came from.</p></div>
+      <div class="card"><h3>Safety checks</h3><p>Duplicate moments are skipped, and posting pauses automatically if a platform reports a problem.</p></div>
+    </div>
+  </section>
+
+  <section id="platforms" class="block">
+    <h2>Platforms and permissions</h2>
+    <p>ClipForge connects only to accounts its user owns, through each platform's official sign-in. It asks for the minimum access needed to publish videos:</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Platform</th><th>What ClipForge uses</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>TikTok</td><td>Login Kit, Content Posting API (<code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>)</td><td>Show which account is connected and upload the user's clips to it</td></tr>
+        <tr><td>YouTube</td><td>YouTube Data API (upload)</td><td>Publish clips as YouTube Shorts</td></tr>
+        <tr><td>Instagram / Facebook</td><td>Meta Graph API (Pages, Instagram content publishing)</td><td>Publish clips as Reels on the user's own Page and Instagram account</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">ClipForge never reads messages, follower lists or comments, and only posts what its user has set it up to post. Access can be removed at any time by disconnecting the account in ClipForge or in the platform's own app settings.</p>
+  </section>
+
+  <section id="faq" class="block">
+    <h2>FAQ</h2>
+    <details><summary>Who is ClipForge for?</summary><p>It's built and used by an independent creator in the United Kingdom to run his own clip pages (BFClippyTokky). It isn't sold or offered to other users at the moment.</p></details>
+    <details><summary>Does my data leave my computer?</summary><p>Only the videos and captions you post, which go to the platform you're posting to. Login tokens are stored in Windows Credential Manager on your PC. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
+    <details><summary>Whose content is in the clips?</summary><p>Short highlights of public livestreams, credited to the streamer. Users are responsible for making sure they have the right to post what they clip; see the <a href="terms.html">Terms of Service</a>.</p></details>
+    <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:falconerbrad@gmail.com">falconerbrad@gmail.com</a>.</p></details>
+  </section>
+</main>
+
+<footer>
+  <img src="icon.png" alt="" width="24" height="24">
+  <span>© 2026 ClipForge</span>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="mailto:falconerbrad@gmail.com">Contact</a>
+</footer>
+</body>
+</html>
